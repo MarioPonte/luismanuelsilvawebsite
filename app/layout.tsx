@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { LogoLMS } from "./SVGFiles";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +28,21 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <nav className="shadow-md shadow-neutral-100">
+          <div className="w-[1080px] flex h-24 items-center justify-between m-auto">
+            <div className="flex items-center gap-2">
+              <LogoLMS className="h-10" />
+              <span className="text-3xl">Luis Manuel Silva</span>
+            </div>
+            <div>
+              Links
+            </div>
+            <div className="flex flex-col">
+              <span className="text-2xl underline">Autor</span>
+              <span className="text-xs">Carpinteiro de Letras, Palavras e Linhas</span>
+            </div>
+          </div>
+        </nav>
         {children}
       </body>
     </html>
