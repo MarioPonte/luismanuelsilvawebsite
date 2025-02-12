@@ -1,13 +1,15 @@
 import { Card } from "@/components/ui/card";
 import { Quote } from "lucide-react";
 import Image from "next/image";
+import Container from "../Container";
 
 export default function Bio() {
   return (
-    <section id="biografia" className="w-[1000px] font-playfairDisplay m-auto">
+    <Container id="biografia">
       <h1 className="font-playfairDisplay text-3xl font-semibold uppercase text-center my-10">Biografia</h1>
 
       <div className="flex flex-col gap-10">
+        <hr />
         <Card className="p-4">
           <div className="flex gap-10 items-center">
             <Image src="/images/fotoBio.avif" className="w-44 rounded-md" width={182} height={211} alt="Foto de Luis Silva" />
@@ -41,28 +43,28 @@ export default function Bio() {
               de 1971 a 1974. Foram quatro anos de sonhos e juventudes perdidas das gerações de sessenta e setenta.</p>
           </div>
           <div>
-            <p>O gosto pela escrita e leitura começou com as leituras dos jornais do pai, os romances de cordel 
-              da mãe — que não deixou de ler quando fez o exame da segunda classe — e as cartas que escrevia a rogo dos analfabetos 
+            <p>O gosto pela escrita e leitura começou com as leituras dos jornais do pai, os romances de cordel
+              da mãe — que não deixou de ler quando fez o exame da segunda classe — e as cartas que escrevia a rogo dos analfabetos
               para os maridos e mulheres, separados pela distância, em busca de melhores condições de vida.</p>
           </div>
           <div>
-            <p>Profissionalmente, e sempre na área de electricidade, passou pela construção civil e contribuiu para a construção dos 
-              bairros de Lisboa: Olivais Sul e Norte, Estrada da Luz e Benfica. Antes de ser incorporado, ajudou a montar as 
-              primeiras bancadas de corte, desbaste e lapidação de diamantes, na extinta Dialap, hoje, RTP, onde trabalhou até 1984. 
-              Entrou para o quadro de pessoal do Banco de Portugal e saiu, pouco tempo depois, para trabalhar em Luanda, Angola. 
-              Entre outros trabalhos, esteve envolvido na construção da rede eléctrica, alojamentos e serviços sociais para os 
-              participantes da Conferência Ministerial do Movimento dos Países Não-Alinhados, realizada em Angola. 
+            <p>Profissionalmente, e sempre na área de electricidade, passou pela construção civil e contribuiu para a construção dos
+              bairros de Lisboa: Olivais Sul e Norte, Estrada da Luz e Benfica. Antes de ser incorporado, ajudou a montar as
+              primeiras bancadas de corte, desbaste e lapidação de diamantes, na extinta Dialap, hoje, RTP, onde trabalhou até 1984.
+              Entrou para o quadro de pessoal do Banco de Portugal e saiu, pouco tempo depois, para trabalhar em Luanda, Angola.
+              Entre outros trabalhos, esteve envolvido na construção da rede eléctrica, alojamentos e serviços sociais para os
+              participantes da Conferência Ministerial do Movimento dos Países Não-Alinhados, realizada em Angola.
               Regressou ao Banco de Portugal, onde trabalhou até à reforma, no dia 1 de Abril de 2013.</p>
           </div>
           <div>
             <p>Fez curso de escrita criativa como combatente, em Angola, durante dois anos de cartas quase diárias.</p>
-            <p>Alguns escritos foram encerrados no baú das memórias de ex-combatente. Mais tarde, já reformado, e por o bichinho da 
+            <p>Alguns escritos foram encerrados no baú das memórias de ex-combatente. Mais tarde, já reformado, e por o bichinho da
               escrita não o ter abandonado, ao remexer nos velhos papéis picados pelas traças, achou piada, e perguntou-se:</p>
-              <p>De quem serão estes manuscritos?</p>
-              <p>Desde então, fez algumas tentativas de escrita de longo curso.</p>
+            <p>De quem serão estes manuscritos?</p>
+            <p>Desde então, fez algumas tentativas de escrita de longo curso.</p>
           </div>
           <div>
-            <p>Dessa prática empírica, feita de experiência,  resultaram estes livros que agora entrego à justiça para serem sentenciados 
+            <p>Dessa prática empírica, feita de experiência,  resultaram estes livros que agora entrego à justiça para serem sentenciados
               pelos eméritos Juízes Conselheiros da Leitura Suprema.</p>
           </div>
           <div>
@@ -70,6 +72,6 @@ export default function Bio() {
           </div>
         </div>
       </div>
-    </section>
+    </Container>
   );
 }
