@@ -11,6 +11,7 @@ export default function Navbar() {
         <div className="flex gap-4 text-neutral-800">
           <a href="/#livros" className="hover:text-neutral-600">Livros</a>
           <a href="/#biografia" className="hover:text-neutral-600">Biografia</a>
+          <a href="/#comentarios" className="hover:text-neutral-600">Comentários</a>
         </div>
         <div className="flex flex-col">
           <span className="text-2xl underline">Autor</span>
