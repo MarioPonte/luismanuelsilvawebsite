@@ -13,13 +13,13 @@ const Book: React.FC<BookProps> = ({ title, cover, buyLink }) => {
     return (
         <div className="flex flex-col gap-5 max-w-[220px] text-center text-lg h-full">
             <Link href="/">
-                <Image src={cover} width={220} height={334} alt="Um Comboio de Vidas Suspensas" className="border h-80 hover:opacity-90 transition-opacity duration-300 relative z-10" />
+                <Image src={cover} width={220} height={334} alt={title} className="border h-80 hover:opacity-90 transition-opacity duration-300 relative z-10" />
             </Link>
             <hr />
             <span className="flex items-center justify-center font-bold h-20">{title}</span>
 
             <div className="flex flex-col gap-3">
-                <Link href="/">
+                <Link href={`/livros/#${title}`}>
                     <Button className="w-full">
                         Resumo
                     </Button>
