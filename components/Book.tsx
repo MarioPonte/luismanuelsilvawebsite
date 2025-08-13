@@ -12,7 +12,7 @@ interface BookProps {
 const Book: React.FC<BookProps> = ({ title, cover, buyLink }) => {
     return (
         <div className="flex flex-col gap-5 max-w-[220px] text-center text-lg h-full">
-            <Link href="/">
+            <Link href={`/livros/#${title}`}>
                 <Image src={cover} width={220} height={334} alt={title} className="border h-80 hover:opacity-90 transition-opacity duration-300 relative z-10" />
             </Link>
             <hr />

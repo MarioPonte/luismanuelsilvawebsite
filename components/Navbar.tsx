@@ -2,7 +2,7 @@ import { LogoLMS } from "../app/SVGFiles";
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 w-full bg-white shadow-md shadow-neutral-100 font-gloock z-50">
+    <nav className="sticky top-0 w-full bg-white shadow-md shadow-neutral-100 font-gloock z-50">
       <div className="w-[1080px] flex h-24 items-center justify-between m-auto">
         <a href="/" className="flex items-center gap-2">
           <LogoLMS className="h-10" />

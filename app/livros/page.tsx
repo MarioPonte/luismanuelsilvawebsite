@@ -6,6 +6,21 @@ export default function Page() {
     <Container id="livros">
       <div>
         <BookSec
+          title="Uma Diversão de Potestades"
+          cover="/images/books/book5.jpeg"
+          description={<>
+            <p>Enquanto Yahweh e Moloque jogam xadrez, a terra arde e as peças humanas movem-se sem saber que fazem parte de um jogo maior.</p>
+            <p>Cada jogada muda o rumo dos acontecimentos. Cada capítulo é um reflexo direto das mãos invisíveis que tecem os fios do bem e do
+              mal, da ordem e do caos, da proteção e destruição.</p>
+            <p>Quando a guerra na Ucrânia explode, um grupo de alunos e docentes da Universidade de Colúmbia, em Nova Iorque, vê-se apanhado
+              pelo choque e pela urgência de agir. Vindos de diferentes países e culturas, unem-se em solidariedade com os colegas afetados.
+              Mas quando o conflito em Gaza rebenta, percebem que o sofrimento é universal e que as potestades jogam em todos os tabuleiros.</p>
+            <p>Entre ficar inativos ou arriscar, escolhem oferecer as suas vidas para aliviar o sofrimento dos outros — um caminho que os
+              levará a questionar as narrativas dominantes, a confrontar a ideia de povo eleito e a sentir, na pele, o preço da humanidade.</p>
+          </>}
+          buyLink="https://www.amazon.com/dp/B0FDWNRKPK"
+        />
+        <BookSec
           title="Um Comboio de Vidas Suspensas"
           cover="/images/books/book1.jpg"
           description={<>
